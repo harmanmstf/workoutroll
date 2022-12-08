@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Roll Workout</string>
+    <string name="roll">Roll</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="abs">abs</string>
+    <string name="abs1">sit-ups</string>
+    <string name="abs2">reverse crunches</string>
+    <string name="abs3">bicycle crunches</string>
+    <string name="abs4">flutter kicks</string>
+    <string name="abs5">leg raises</string>
+    <string name="abs6">elbow plank</string>
+
+    <string name="quads">quads</string>
+    <string name="quads1">lunges</string>
+    <string name="quads2">high knees</string>
+    <string name="quads3">turning kicks</string>
+    <string name="quads4">climbers</string>
+    <string name="quads5">plank jump-ins</string>
+    <string name="quads6">lunges step-ups</string>
+
+    <string name="glutes">glutes</string>
+    <string name="glutes1">squats</string>
+    <string name="glutes2">donkey kicks</string>
+    <string name="glutes3">bridges</string>
+    <string name="glutes4">hump knee tucks</string>
+    <string name="glutes5">fly steps</string>
+    <string name="glutes6">side leg raises</string>
+
+    <string name="triceps">triceps</string>
+    <string name="triceps1">close grip push-ups</string>
+    <string name="triceps2">tricep dips</string>
+    <string name="triceps3">tricep extensions</string>
+    <string name="triceps4">get ups</string>
+    <string name="triceps5">punches</string>
+    <string name="triceps6">side-to-sides chops</string>
+
+    <string name="biceps">biceps</string>
+    <string name="biceps1">leg curls</string>
+    <string name="biceps2">chin-ups</string>
+    <string name="biceps3">door frame rows</string>
+    <string name="biceps4">body rows</string>
+    <string name="biceps5">sitting pull-ups</string>
+    <string name="biceps6">pseudo planche</string>
+
+    <string name="back">back</string>
+    <string name="back1">pull-ups</string>
+    <string name="back2">elbow lifts</string>
+    <string name="back3">superman</string>
+    <string name="back4">star plank</string>
+    <string name="back5">alt arm/leg plank</string>
+    <string name="back6">full arch</string>
+
+    <string name="chest">chest</string>
+    <string name="chest1">push-ups</string>
+    <string name="chest2">plank rotations</string>
+    <string name="chest3">chest squeezes</string>
+    <string name="chest4">shoulder press</string>
+    <string name="chest5">shoulder taps</string>
+    <string name="chest6">clapping push-ups</string>
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>
