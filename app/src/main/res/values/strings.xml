@@ -24,7 +24,7 @@
     <string name="glutes1">squats</string>
     <string name="glutes2">donkey kicks</string>
     <string name="glutes3">bridges</string>
-    <string name="glutes4">hump knee tucks</string>
+    <string name="glutes4">jump knee tucks</string>
     <string name="glutes5">fly steps</string>
     <string name="glutes6">side leg raises</string>
 
@@ -59,16 +59,6 @@
     <string name="chest4">shoulder press</string>
     <string name="chest5">shoulder taps</string>
     <string name="chest6">clapping push-ups</string>
-
-
-
-
-
-
-
-
-
-
 
 
 </resources>

@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_workoutRollFragment_to_helpFragment"
             app:destination="@id/helpFragment" />
+        <action
+            android:id="@+id/action_workoutRollFragment_to_typesWorkoutFragment"
+            app:destination="@id/typesWorkoutFragment" />
     </fragment>
     <fragment
         android:id="@+id/helpFragment"
@@ -22,4 +25,8 @@
             android:name="searchUrl"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/typesWorkoutFragment"
+        android:name="com.example.rollworkout.TypesWorkoutFragment"
+        android:label="TypesWorkoutFragment" />
 </navigation>

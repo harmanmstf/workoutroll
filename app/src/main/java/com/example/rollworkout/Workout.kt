@@ -17,7 +17,7 @@ class Workout {
         "squats",
         "donkey kicks",
         "bridges",
-        "hump knee tucks",
+        "jump knee tucks",
         "fly steps",
         "side leg raises",
         "close grip push-ups",

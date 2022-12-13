@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Mustafa/Desktop/kotlin/RollWorkout/app/src/main/res/drawable/border_image.xml" value="0.151" />
         <entry key="..\:/Users/Mustafa/Desktop/kotlin/RollWorkout/app/src/main/res/layout/activity_main.xml" value="0.22056159420289856" />
+        <entry key="..\:/Users/Mustafa/Desktop/kotlin/RollWorkout/app/src/main/res/layout/card_design_item.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/Mustafa/Desktop/kotlin/RollWorkout/app/src/main/res/layout/fragment_abs.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/Mustafa/Desktop/kotlin/RollWorkout/app/src/main/res/layout/fragment_help.xml" value="0.1134453781512605" />
-        <entry key="..\:/Users/Mustafa/Desktop/kotlin/RollWorkout/app/src/main/res/layout/fragment_workout_roll.xml" value="0.264" />
+        <entry key="..\:/Users/Mustafa/Desktop/kotlin/RollWorkout/app/src/main/res/layout/fragment_types_workout.xml" value="0.4" />
+        <entry key="..\:/Users/Mustafa/Desktop/kotlin/RollWorkout/app/src/main/res/layout/fragment_workout_roll.xml" value="0.16" />
         <entry key="..\:/Users/Mustafa/Desktop/kotlin/RollWorkout/app/src/main/res/layout/list_item.xml" value="0.25052083333333336" />
       </map>
     </option>

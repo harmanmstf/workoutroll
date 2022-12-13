@@ -15,6 +15,7 @@ import com.example.rollworkout.databinding.FragmentWorkoutRollBinding
 class WorkoutRollFragment : Fragment() {
 
     private var _binding: FragmentWorkoutRollBinding? = null
+
     // This property is only valid between onCreateView and
 // onDestroyView.
     private val binding get() = _binding!!
@@ -34,24 +35,21 @@ class WorkoutRollFragment : Fragment() {
         var rollResult = ""  //TODO lateinit yapılabilir
 
         binding.RollButton.setOnClickListener {
-            rollResult =workout.roll()
+            rollResult = workout.roll()
             binding.textViewExercise.text = rollResult
         }
 
-        binding.imageViewHelp.setOnClickListener{
-            val action = WorkoutRollFragmentDirections.actionWorkoutRollFragmentToHelpFragment(rollResult)
-             findNavController().navigate(action)
+        binding.imageViewHelp.setOnClickListener {
+            val action =
+                WorkoutRollFragmentDirections.actionWorkoutRollFragmentToHelpFragment(rollResult)
+            findNavController().navigate(action)
         }
 
-        val myDataset = Datasource().loadExercise()
+        binding.button.setOnClickListener {
+            val action =
+                WorkoutRollFragmentDirections.actionWorkoutRollFragmentToTypesWorkoutFragment()
+            findNavController().navigate(action)
 
-        val recyclerView : RecyclerView = binding.recyclerView
-        //val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
-        recyclerView.adapter = ItemAdapter(this, myDataset)
-
-        // Use this setting to improve performance if you know that changes
-        // in content do not change the layout size of the RecyclerView
-        recyclerView.setHasFixedSize(true)
-
+        }
     }
 }
