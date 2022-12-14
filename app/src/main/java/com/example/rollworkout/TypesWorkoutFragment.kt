@@ -30,7 +30,7 @@ class TypesWorkoutFragment : Fragment() {
 
         val myDataset = Datasource().loadExercise()
 
-        val recyclerView : RecyclerView = binding.recyclerView
+        val recyclerView : RecyclerView = binding.recyclerViewTypes
         //val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView.adapter = ItemAdapter(this, myDataset)
 

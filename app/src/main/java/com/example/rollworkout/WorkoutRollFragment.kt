@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.rollworkout.adapter.ItemAdapter
+import com.example.rollworkout.adapter.ItemAdapterWorkoutRoll
 import com.example.rollworkout.data.Datasource
+import com.example.rollworkout.data.PartsDatasource
 import com.example.rollworkout.databinding.FragmentWorkoutRollBinding
 
 
@@ -45,11 +47,16 @@ class WorkoutRollFragment : Fragment() {
             findNavController().navigate(action)
         }
 
-        binding.button.setOnClickListener {
-            val action =
-                WorkoutRollFragmentDirections.actionWorkoutRollFragmentToTypesWorkoutFragment()
-            findNavController().navigate(action)
+        val myDataset = PartsDatasource().loadParts()
+
+        val recyclerView : RecyclerView = binding.recyclerViewWorkoutRoll
+
+        recyclerView.adapter = ItemAdapterWorkoutRoll(this, myDataset)
+
+        // Use this setting to improve performance if you know that changes
+        // in content do not change the layout size of the RecyclerView
+        recyclerView.setHasFixedSize(true)
+
 
         }
     }
-}
