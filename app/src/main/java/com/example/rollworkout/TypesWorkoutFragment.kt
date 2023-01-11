@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.rollworkout.adapter.ItemAdapter
+import com.example.rollworkout.data.ChestDatasource
 import com.example.rollworkout.data.Datasource
 import com.example.rollworkout.databinding.FragmentTypesWorkoutBinding
 import com.example.rollworkout.databinding.FragmentWorkoutRollBinding
@@ -28,7 +29,7 @@ class TypesWorkoutFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val myDataset = Datasource().loadExercise()
+        val myDataset = ChestDatasource().loadChest()
 
         val recyclerView : RecyclerView = binding.recyclerViewTypes
         //val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
