@@ -1,6 +1,6 @@
 package com.example.rollworkout.adapter
 
-import android.content.Context
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,9 +13,7 @@ import com.example.rollworkout.R
 import com.example.rollworkout.TypesWorkoutFragment
 import com.example.rollworkout.WorkoutRollFragment
 import com.example.rollworkout.WorkoutRollFragmentDirections
-import com.example.rollworkout.model.Chest
 import com.example.rollworkout.model.WorkoutParts
-import com.example.rollworkout.model.WorkoutRoll
 import com.example.rollworkout.model.WorkoutType
 
 class ItemAdapter(

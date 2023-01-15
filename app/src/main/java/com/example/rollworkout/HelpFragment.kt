@@ -5,14 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.webkit.WebChromeClient
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import android.widget.Button
-import android.widget.TextView
 import androidx.navigation.fragment.navArgs
 import com.example.rollworkout.databinding.FragmentHelpBinding
-import com.example.rollworkout.databinding.FragmentWorkoutRollBinding
+
 
 
 class HelpFragment : Fragment() {
@@ -27,7 +24,7 @@ class HelpFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
         _binding = FragmentHelpBinding.inflate(inflater, container, false)
         return binding.root
     }

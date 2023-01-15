@@ -7,9 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.rollworkout.adapter.ItemAdapter
 import com.example.rollworkout.adapter.ItemAdapterWorkoutRoll
-import com.example.rollworkout.data.Datasource
 import com.example.rollworkout.data.PartsDatasource
 import com.example.rollworkout.databinding.FragmentWorkoutRollBinding
 
@@ -25,7 +23,7 @@ class WorkoutRollFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
         _binding = FragmentWorkoutRollBinding.inflate(inflater, container, false)
         return binding.root
     }

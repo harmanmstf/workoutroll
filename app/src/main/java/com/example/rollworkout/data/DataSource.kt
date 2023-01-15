@@ -6,7 +6,7 @@ import com.example.rollworkout.model.*
 class Datasource {
 
     fun loadExercise(): List<WorkoutRoll> {
-        return listOf<WorkoutRoll>(
+        return listOf(
             WorkoutRoll(R.drawable.sit_ups, R.string.abs1),
             WorkoutRoll(R.drawable.reverse_crunches, R.string.abs2),
             WorkoutRoll(R.drawable.bicycle_crunches, R.string.abs3),
@@ -55,7 +55,7 @@ class Datasource {
 
 class AbsDatasource {
     fun loadAbs(): List<Abs> {
-        return listOf<Abs>(
+        return listOf(
             Abs(R.drawable.sit_ups, R.string.abs1),
             Abs(R.drawable.reverse_crunches, R.string.abs2),
             Abs(R.drawable.bicycle_crunches, R.string.abs3),
@@ -68,7 +68,7 @@ class AbsDatasource {
 
 class QuadsDatasource {
     fun loadQuads(): List<Quads> {
-        return listOf<Quads>(
+        return listOf(
             Quads(R.drawable.lunges, R.string.quads1),
             Quads(R.drawable.high_knees, R.string.quads2),
             Quads(R.drawable.turning_kicks, R.string.quads3),
@@ -81,7 +81,7 @@ class QuadsDatasource {
 
 class GlutesDatasource {
     fun loadGlutes(): List<Glutes> {
-        return listOf<Glutes>(
+        return listOf(
             Glutes(R.drawable.squats, R.string.glutes1),
             Glutes(R.drawable.donkey_kicks, R.string.glutes2),
             Glutes(R.drawable.bridges, R.string.glutes3),
@@ -94,7 +94,7 @@ class GlutesDatasource {
 
 class TricepsDatasource {
     fun loadTriceps(): List<Triceps> {
-        return listOf<Triceps>(
+        return listOf(
             Triceps(R.drawable.close_grip_push_ups, R.string.triceps1),
             Triceps(R.drawable.triceps_dips, R.string.triceps2),
             Triceps(R.drawable.triceps_extensions, R.string.triceps3),
@@ -107,7 +107,7 @@ class TricepsDatasource {
 
 class BicepsDatasource {
     fun loadBiceps(): List<Biceps> {
-        return listOf<Biceps>(
+        return listOf(
             Biceps(R.drawable.leg_curls, R.string.biceps1),
             Biceps(R.drawable.chin_ups, R.string.biceps2),
             Biceps(R.drawable.door_frame_rows, R.string.biceps3),
@@ -120,7 +120,7 @@ class BicepsDatasource {
 
 class BackDatasource {
     fun loadBack(): List<Back> {
-        return listOf<Back>(
+        return listOf(
             Back(R.drawable.pull_ups, R.string.back1),
             Back(R.drawable.elbow_lifts, R.string.back2),
             Back(R.drawable.superman, R.string.back3),
@@ -133,7 +133,7 @@ class BackDatasource {
 
 class ChestDatasource {
     fun loadChest(): List<Chest> {
-        return listOf<Chest>(
+        return listOf(
             Chest(R.drawable.push_ups, R.string.chest1),
             Chest(R.drawable.plank_rotations, R.string.chest2),
             Chest(R.drawable.chest_squeezes, R.string.chest3),

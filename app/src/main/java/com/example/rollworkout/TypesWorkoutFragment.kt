@@ -10,20 +10,19 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.rollworkout.adapter.ItemAdapter
 import com.example.rollworkout.data.*
 import com.example.rollworkout.databinding.FragmentTypesWorkoutBinding
-import com.example.rollworkout.databinding.FragmentWorkoutRollBinding
 import com.example.rollworkout.model.WorkoutParts
 
 class TypesWorkoutFragment : Fragment() {
 
     private var _binding: FragmentTypesWorkoutBinding? = null
     private val binding get() = _binding!!
-    val args: TypesWorkoutFragmentArgs by navArgs()
+    private val args: TypesWorkoutFragmentArgs by navArgs()
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
         _binding = FragmentTypesWorkoutBinding.inflate(inflater, container, false)
         return binding.root
     }
