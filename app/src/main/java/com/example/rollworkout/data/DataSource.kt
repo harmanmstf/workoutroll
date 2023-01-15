@@ -146,14 +146,6 @@ class ChestDatasource {
 
 class PartsDatasource {
     fun loadParts(): List<WorkoutParts> {
-        return listOf<WorkoutParts>(
-            WorkoutParts(R.drawable.abs, R.string.abs),
-            WorkoutParts(R.drawable.quads, R.string.quads),
-            WorkoutParts(R.drawable.glutes, R.string.glutes),
-            WorkoutParts(R.drawable.triceps, R.string.triceps),
-            WorkoutParts(R.drawable.biceps, R.string.biceps),
-            WorkoutParts(R.drawable.back, R.string.back),
-            WorkoutParts(R.drawable.chest, R.string.chest)
-        )
+        return WorkoutParts.values().toList()
     }
 }

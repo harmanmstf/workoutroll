@@ -5,17 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.RecyclerView
 import com.example.rollworkout.adapter.ItemAdapter
-import com.example.rollworkout.data.ChestDatasource
-import com.example.rollworkout.data.Datasource
+import com.example.rollworkout.data.*
 import com.example.rollworkout.databinding.FragmentTypesWorkoutBinding
 import com.example.rollworkout.databinding.FragmentWorkoutRollBinding
+import com.example.rollworkout.model.WorkoutParts
 
 class TypesWorkoutFragment : Fragment() {
 
     private var _binding: FragmentTypesWorkoutBinding? = null
     private val binding get() = _binding!!
+    val args: TypesWorkoutFragmentArgs by navArgs()
 
 
     override fun onCreateView(
@@ -29,7 +31,15 @@ class TypesWorkoutFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val myDataset = ChestDatasource().loadChest()
+        val myDataset = when(args.selectedWorkoutPart){
+            WorkoutParts.ABS     -> AbsDatasource().loadAbs()
+            WorkoutParts.QUADS   -> QuadsDatasource().loadQuads()
+            WorkoutParts.GLUTES  -> GlutesDatasource().loadGlutes()
+            WorkoutParts.TRICEPS -> TricepsDatasource().loadTriceps()
+            WorkoutParts.BICEPS  -> BicepsDatasource().loadBiceps()
+            WorkoutParts.BACK    -> BackDatasource().loadBack()
+            WorkoutParts.CHEST   -> ChestDatasource().loadChest()
+        }
 
         val recyclerView : RecyclerView = binding.recyclerViewTypes
         //val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)

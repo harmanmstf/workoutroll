@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebChromeClient
 import android.webkit.WebView
+import android.webkit.WebViewClient
 import android.widget.Button
 import android.widget.TextView
 import androidx.navigation.fragment.navArgs
@@ -16,7 +17,7 @@ import com.example.rollworkout.databinding.FragmentWorkoutRollBinding
 
 class HelpFragment : Fragment() {
 
-    val args: HelpFragmentArgs by navArgs()
+    private val args: HelpFragmentArgs by navArgs()
 
     private var _binding: FragmentHelpBinding? = null
     // This property is only valid between onCreateView and
@@ -36,7 +37,7 @@ class HelpFragment : Fragment() {
 
         val webView: WebView = binding.webViewHelp
 
-       // webView.webChromeClient = WebChromeClient()
+        webView.webViewClient = WebViewClient()
         webView.loadUrl("https://www.google.com/search?q=" + args.searchUrl)
 
 

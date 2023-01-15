@@ -16,14 +16,15 @@ import com.example.rollworkout.WorkoutRollFragmentDirections
 import com.example.rollworkout.model.Chest
 import com.example.rollworkout.model.WorkoutParts
 import com.example.rollworkout.model.WorkoutRoll
+import com.example.rollworkout.model.WorkoutType
 
 class ItemAdapter(
     private val context: TypesWorkoutFragment,
-    private val dataset: List<Chest>
+    private val dataset: List<WorkoutType>
 
 ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
-    class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
+    class ItemViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById(R.id.item_title)
         val imageView: ImageView = view.findViewById(R.id.item_image)
 
@@ -78,7 +79,7 @@ class ItemAdapterWorkoutRoll(
         holder.button.setOnClickListener {
             // Create an action from WordList to DetailList
             // using the required arguments
-            val action = WorkoutRollFragmentDirections.actionWorkoutRollFragmentToTypesWorkoutFragment()
+            val action = WorkoutRollFragmentDirections.actionWorkoutRollFragmentToTypesWorkoutFragment(item)
             // Navigate using that action
             holder.view.findNavController().navigate(action)
         }
