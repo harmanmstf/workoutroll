@@ -1,9 +1,7 @@
 package com.example.rollworkout
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 
 class MainActivity : AppCompatActivity() {
@@ -16,8 +14,7 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
 
 
-
-        }
     }
+}
 
 

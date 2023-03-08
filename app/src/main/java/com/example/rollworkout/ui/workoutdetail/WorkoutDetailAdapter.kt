@@ -11,18 +11,16 @@ import com.example.rollworkout.model.WorkoutType
 
 class WorkoutDetailAdapter(
     private val context: WorkoutDetailFragment,
-    private val dataset: List<WorkoutType>
+    private val dataset: List<WorkoutType>,
 
-) : RecyclerView.Adapter<WorkoutDetailAdapter.ItemViewHolder>() {
+    ) : RecyclerView.Adapter<WorkoutDetailAdapter.ItemViewHolder>() {
 
     class ItemViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById(R.id.item_title)
         val imageView: ImageView = view.findViewById(R.id.item_image)
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
-        // create a new view
         val adapterLayout = LayoutInflater.from(parent.context)
             .inflate(R.layout.list_item, parent, false)
 
@@ -31,9 +29,10 @@ class WorkoutDetailAdapter(
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
-        holder.textView.text =  context.resources.getString(item.stringResourceId)
+        holder.textView.text = context.resources.getString(item.stringResourceId)
         holder.imageView.setImageResource(item.imageResourceID)
     }
 
     override fun getItemCount() = dataset.size
+
 }

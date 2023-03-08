@@ -6,7 +6,6 @@
     tools:context=".ui.workouthelp.HelpFragment">
 
 
-
     <WebView
         android:id="@+id/webViewHelp"
         android:layout_width="match_parent"

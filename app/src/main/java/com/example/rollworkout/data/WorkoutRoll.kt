@@ -1,6 +1,6 @@
-package com.example.rollworkout
+package com.example.rollworkout.data
 
-class Workout {
+class WorkoutRoll {
     private val exercise = arrayListOf(
         "sit-ups",
         "reverse crunches",

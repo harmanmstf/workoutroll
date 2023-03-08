@@ -1,15 +1,14 @@
 package com.example.rollworkout.ui.workouthelp
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.example.rollworkout.databinding.FragmentHelpBinding
-
 
 
 class HelpFragment : Fragment() {
@@ -17,8 +16,6 @@ class HelpFragment : Fragment() {
     private val args: HelpFragmentArgs by navArgs()
 
     private var _binding: FragmentHelpBinding? = null
-    // This property is only valid between onCreateView and
-// onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -38,7 +35,6 @@ class HelpFragment : Fragment() {
         webView.loadUrl("https://www.google.com/search?q=" + args.searchUrl)
 
 
-
-        }
     }
+}
 

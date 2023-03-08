@@ -4,7 +4,6 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import com.example.rollworkout.R
 
-data class WorkoutRoll(override val imageResourceID: Int, override val stringResourceId: Int):WorkoutType
 data class Abs(override val imageResourceID: Int, override val stringResourceId: Int):WorkoutType
 data class Quads(override val imageResourceID: Int, override val stringResourceId: Int):WorkoutType
 data class Glutes(override val imageResourceID: Int, override val stringResourceId: Int):WorkoutType
