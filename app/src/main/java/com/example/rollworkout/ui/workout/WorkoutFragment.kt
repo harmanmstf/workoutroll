@@ -1,4 +1,4 @@
-package com.example.rollworkout
+package com.example.rollworkout.ui.workout
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,12 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.rollworkout.adapter.ItemAdapterWorkoutRoll
+import com.example.rollworkout.Workout
+import com.example.rollworkout.adapter.WorkoutAdapter
 import com.example.rollworkout.data.PartsDatasource
 import com.example.rollworkout.databinding.FragmentWorkoutRollBinding
 
 
-class WorkoutRollFragment : Fragment() {
+class WorkoutFragment : Fragment() {
 
     private var _binding: FragmentWorkoutRollBinding? = null
 
@@ -41,7 +42,7 @@ class WorkoutRollFragment : Fragment() {
 
         binding.imageViewHelp.setOnClickListener {
             val action =
-                WorkoutRollFragmentDirections.actionWorkoutRollFragmentToHelpFragment(rollResult)
+                WorkoutFragmentDirections.actionWorkoutRollFragmentToHelpFragment(rollResult)
             findNavController().navigate(action)
         }
 
@@ -49,7 +50,7 @@ class WorkoutRollFragment : Fragment() {
 
         val recyclerView : RecyclerView = binding.recyclerViewWorkoutRoll
 
-        recyclerView.adapter = ItemAdapterWorkoutRoll(this, myDataset)
+        recyclerView.adapter = WorkoutAdapter(this, myDataset)
 
         // Use this setting to improve performance if you know that changes
         // in content do not change the layout size of the RecyclerView

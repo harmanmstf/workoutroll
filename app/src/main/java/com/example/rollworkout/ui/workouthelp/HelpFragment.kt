@@ -1,4 +1,4 @@
-package com.example.rollworkout
+package com.example.rollworkout.ui.workouthelp
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
